@@ -13,7 +13,7 @@ namespace bussinesFrame
     {
 
 
-        public List<personal_Entity> tb_clientes(String USUARIO,String CONTRASENA)
+        public List<personal_Entity> identificacion(String USUARIO,String CONTRASENA)
         {
             var cliente = new logeo_usuario_DAO();
             return cliente.identificacion(USUARIO,CONTRASENA);

@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using bussinesFrame;
 using entityFrame;
+using System.Web.Security;
 
 namespace SicnetMVC.Controllers
 {
@@ -29,6 +30,36 @@ namespace SicnetMVC.Controllers
         {
             return View();
         }
+
+
+
+        [HttpPost]
+        public ActionResult Login(personal_Entity personal)
+        {
+            
+            if (ModelState.IsValid)
+            {
+
+                try { 
+                if (logeo.identificacion(personal.usuario, personal.contrasena).Count > 0)
+                {
+                    FormsAuthentication.SetAuthCookie(personal.usuario, false);
+                    return RedirectToAction("Index", "Home");
+
+                }
+                }
+                catch (Exception ex)
+                {
+                    ModelState.AddModelError("error", ex.Message);
+                }
+
+            }
+
+            return View(personal);
+
+        }
+
+
 
 
         // GET: Home

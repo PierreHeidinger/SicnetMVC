@@ -164,28 +164,24 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
-    <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
-    <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="CCS\login\index.js" />
+    <Content Include="CCS\login\style.css" />
     <Content Include="favicon.ico" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
+    <Content Include="images\login\1.jpg" />
+    <Content Include="images\login\2.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Properties\PublishProfiles\DUD.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -198,6 +194,77 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="tools\dist\css\style.css" />
+    <Content Include="tools\dist\css\themes.css" />
+    <Content Include="tools\dist\css\themes\flat-blue.css" />
+    <Content Include="tools\dist\css\themes\flat-green.css" />
+    <Content Include="tools\dist\html\components\chartjs.html" />
+    <Content Include="tools\dist\html\components\pricing-table.html" />
+    <Content Include="tools\dist\html\form\ui-kits.html" />
+    <Content Include="tools\dist\html\icons\font-awesome.html" />
+    <Content Include="tools\dist\html\icons\glyphicons.html" />
+    <Content Include="tools\dist\html\index.html" />
+    <Content Include="tools\dist\html\license.html" />
+    <Content Include="tools\dist\html\pages\index.html" />
+    <Content Include="tools\dist\html\pages\login.html" />
+    <Content Include="tools\dist\html\table\datatable.html" />
+    <Content Include="tools\dist\html\table\table.html" />
+    <Content Include="tools\dist\html\ui-kits\alert.html" />
+    <Content Include="tools\dist\html\ui-kits\button.html" />
+    <Content Include="tools\dist\html\ui-kits\card.html" />
+    <Content Include="tools\dist\html\ui-kits\grid.html" />
+    <Content Include="tools\dist\html\ui-kits\list.html" />
+    <Content Include="tools\dist\html\ui-kits\loader.html" />
+    <Content Include="tools\dist\html\ui-kits\modal.html" />
+    <Content Include="tools\dist\html\ui-kits\other.html" />
+    <Content Include="tools\dist\html\ui-kits\panel.html" />
+    <Content Include="tools\dist\html\ui-kits\step.html" />
+    <Content Include="tools\dist\html\ui-kits\theming.html" />
+    <Content Include="tools\dist\img\app-header-bg.jpg" />
+    <Content Include="tools\dist\img\backdrop\micro_carbon.png" />
+    <Content Include="tools\dist\img\backdrop\tactile_noise.png" />
+    <Content Include="tools\dist\img\bg.jpg" />
+    <Content Include="tools\dist\img\bg\picjumbo.com_HNCK3558.jpg" />
+    <Content Include="tools\dist\img\contact-us-bg.jpg" />
+    <Content Include="tools\dist\img\profile\picjumbo.com_HNCK4153_resize.jpg" />
+    <Content Include="tools\dist\img\profile\profile-1.jpg" />
+    <Content Include="tools\dist\img\screenshots\dashboard.png" />
+    <Content Include="tools\dist\img\screenshots\landing.png" />
+    <Content Include="tools\dist\img\screenshots\login.png" />
+    <Content Include="tools\dist\img\screenshots\theming.png" />
+    <Content Include="tools\dist\img\thumbnails\picjumbo.com_HNCK4737.jpg" />
+    <Content Include="tools\dist\img\thumbnails\picjumbo.com_IMG_3241.jpg" />
+    <Content Include="tools\dist\img\thumbnails\picjumbo.com_IMG_4566.jpg" />
+    <Content Include="tools\dist\js\alert.js" />
+    <Content Include="tools\dist\js\app.js" />
+    <Content Include="tools\dist\js\button.js" />
+    <Content Include="tools\dist\js\card.js" />
+    <Content Include="tools\dist\js\chartjs.js" />
+    <Content Include="tools\dist\js\index.js" />
+    <Content Include="tools\dist\js\list.js" />
+    <Content Include="tools\dist\js\modal.js" />
+    <Content Include="tools\dist\js\theming.js" />
+    <Content Include="tools\dist\lib\css\animate.min.css" />
+    <Content Include="tools\dist\lib\css\bootstrap-switch.min.css" />
+    <Content Include="tools\dist\lib\css\bootstrap.min.css" />
+    <Content Include="tools\dist\lib\css\checkbox3.min.css" />
+    <Content Include="tools\dist\lib\css\dataTables.bootstrap.css" />
+    <Content Include="tools\dist\lib\css\font-awesome.min.css" />
+    <Content Include="tools\dist\lib\css\jquery.dataTables.min.css" />
+    <Content Include="tools\dist\lib\css\select2.min.css" />
+    <Content Include="tools\dist\lib\fonts\fontawesome-webfont.svg" />
+    <Content Include="tools\dist\lib\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="tools\dist\lib\js\ace\ace.js" />
+    <Content Include="tools\dist\lib\js\ace\mode-html.js" />
+    <Content Include="tools\dist\lib\js\ace\theme-github.js" />
+    <Content Include="tools\dist\lib\js\bootstrap-switch.min.js" />
+    <Content Include="tools\dist\lib\js\bootstrap.min.js" />
+    <Content Include="tools\dist\lib\js\Chart.min.js" />
+    <Content Include="tools\dist\lib\js\dataTables.bootstrap.min.js" />
+    <Content Include="tools\dist\lib\js\jquery.dataTables.min.js" />
+    <Content Include="tools\dist\lib\js\jquery.matchHeight-min.js" />
+    <Content Include="tools\dist\lib\js\jquery.min.js" />
+    <Content Include="tools\dist\lib\js\select2.full.min.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -212,14 +279,22 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="tools\dist\.DS_Store" />
+    <Content Include="tools\dist\lib\fonts\fontawesome-webfont.eot" />
+    <Content Include="tools\dist\lib\fonts\fontawesome-webfont.ttf" />
+    <Content Include="tools\dist\lib\fonts\fontawesome-webfont.woff" />
+    <Content Include="tools\dist\lib\fonts\fontawesome-webfont.woff2" />
+    <Content Include="tools\dist\lib\fonts\FontAwesome.otf" />
+    <Content Include="tools\dist\lib\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="tools\dist\lib\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="tools\dist\lib\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="tools\dist\lib\fonts\glyphicons-halflings-regular.woff2" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
